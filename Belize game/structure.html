@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belize Districts Map Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Click a district on the Belize map</h1>
+    <img id="belize-map" src="belize-map.jpg" usemap="#districts-map" alt="Belize Map">
+
+    <map name="districts-map">
+        <area shape="rect" coords="10,10,100,100" href="#" alt="Orange Walk" onclick="highlightRegion('orange-walk')">
+        <area shape="rect" coords="110,10,200,100" href="#" alt="Cayo" onclick="highlightRegion('cayo')">
+        <area shape="rect" coords="210,10,300,100" href="#" alt="Belize" onclick="highlightRegion('belize')">
+        <area shape="rect" coords="310,10,400,100" href="#" alt="Stann Creek" onclick="highlightRegion('stann-creek')">
+        <area shape="rect" coords="410,10,500,100" href="#" alt="Toledo" onclick="highlightRegion('toledo')">
+    </map>
+
+    <div id="highlighted-area"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

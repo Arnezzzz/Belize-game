@@ -1,0 +1,38 @@
+/* General styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Title styling */
+h1 {
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Styling for the map image */
+#belize-map {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* Styling for the highlighted area */
+#highlighted-area {
+    position: absolute;
+    border: 2px solid red; /* Red border for highlight */
+    background-color: rgba(255, 0, 0, 0.3); /* Semi-transparent red background */
+    display: none; /* Initially hidden */
+    pointer-events: none; /* Disable interaction with the highlighted area */
+    transition: all 0.3s ease; /* Smooth transition for highlight effect */
+}
+
+/* Optional: Styling for the clickable map areas */
+area {
+    cursor: pointer;
+}
